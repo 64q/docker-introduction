@@ -10,7 +10,7 @@ export LANGUAGE=fr_FR.UTF-8
 
 # constantes
 
-REVEALJS_CONFIG="-V slideNumber=\"c/t\" -V theme=black -V controls=true -V history=true -V width=\"100%\" -V height=\"100%\""
+REVEALJS_CONFIG="-V slideNumber=true -V theme=black -V controls=true -V history=true -V width=\"100%\" -V height=\"100%\""
 CURRENT_DATE=`date "+%A %d %B %Y"`
 
 # fonctions
@@ -24,12 +24,12 @@ var_replace()
 # install reveal.js
 
 if ! [[ -d "reveal.js" ]]; then
-  echo "installation de reval.js 3.0.0..."
+  echo "installation de reval.js 3.1.0..."
 
-  wget https://github.com/hakimel/reveal.js/archive/3.0.0.zip \
-  && unzip 3.0.0.zip \
-  && mv reveal.js-3.0.0 reveal.js \
-  && rm 3.0.0.zip
+  wget https://github.com/hakimel/reveal.js/archive/3.1.0.zip \
+  && unzip 3.1.0.zip \
+  && mv reveal.js-3.1.0 reveal.js \
+  && rm 3.1.0.zip
 
 fi
 
