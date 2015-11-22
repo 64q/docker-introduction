@@ -15,7 +15,7 @@
 
 ## La jungle applicative
 
-Les projets modernes s'appuient désormais sur un grand nombre d'outils divers.
+Les projets modernes s'appuient désormais sur un grand nombre d'outils variés.
 
 Chaque brique possède ses propres spécificités de mise en place selon l'environnement et nécessite un effort d'adaptation plus ou moins important selon sa complexité.
 
@@ -69,11 +69,11 @@ Docker apporte une réponse à la problématique de la séparation entre les app
 
 > - Le conteneur est autosuffisant et prend en charge les contraintes de l'application
 > - Les applicatifs ne sont plus dépendants de la machine physique ou virtuelle sur laquelle ils sont déployés et inversement
-> - Le conteneur peut être manipulé en utilisant un jeu de commande standard applicable sur n’importe quelle plateforme
+> - Le conteneur peut être manipulé en utilisant un jeu de commandes standard applicable sur n’importe quelle plate-forme
 
 ## La jungle applicative
 
-La matrice se simplifie grandement :
+La matrice se simplifie grandement
 
 -------           ---           ---        ---         ---
 Static Website    Container     Container  Container   Container
@@ -94,7 +94,7 @@ Frontend Website  Container     Container  Container   Container
 ## Pourquoi utiliser Docker
 
 > - Docker utilise libcontainer comme système de virtualisation, plus léger qu'une virtualisation complète du système
-> - Docker repose sur des concepts et technologies connues, stables et modernes (API, Go programming, etc...)
+> - Docker repose sur des concepts et technologies connues, stables et modernes (API, Go, etc...)
 > - Déploiement rapide et répétable à l'infini
 > - S'exécute n'importe où (tant qu'on a un noyau linux &gt; 2.6)
 
@@ -159,7 +159,7 @@ root@b90302cc3c47:/# echo "Hello World"
 
 ## Garder une trace de son travail
 
-Nous pouvons altérer le conteneur en effectuant des modifications. Il suffit ensuite de sauvegarder à la manière d'une gestion de configuration ses modifications :
+Nous pouvons altérer le conteneur en effectuant des modifications. Il suffit ensuite de sauvegarder, à la manière d'une gestion de configuration, ses modifications :
 
 ```{.bash}
 $ docker commit -m "Premier commit de conteneur" \
